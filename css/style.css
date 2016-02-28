@@ -511,24 +511,28 @@ h1 span{
 
 
 /* projects */
-
-
-.projects{
+.projects, .team{
   position:relative;
   width:100%;
-  background:#f3f3f3;
   z-index:10;
-
 }
 
-.projects .projects-margin{
+.team{
+  background:#444444;
+}
+
+.projects{
+  background:#f3f3f3;
+}
+
+.projects .projects-margin, .team .team-margin{
   position:relative;
   width:900px;
   overflow:hidden;
   margin:0 auto;
 }
 
-.projects .projects-margin .read-more{
+.projects .projects-margin .read-more, .team .team-margin .read-more{
   width:183px;
   height:47px;
   position:relative;
@@ -549,13 +553,18 @@ h1 span{
 	letter-spacing:1px;
 }
 
-.projects .projects-margin .read-more:hover{
+.team .team-margin .read-more{
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.projects .projects-margin .read-more:hover, .team .team-margin .read-more:hover{
   background:#ada074;
   color:white;
   border:1px solid #ada074;
 }
 
-.projects .projects-margin h1{
+.projects .projects-margin h1, .team .team-margin h1{
   font-size:34px;
   color:black;
   text-align:center;
@@ -566,7 +575,10 @@ h1 span{
   line-height:1.2;
 }
 
-.projects .projects-margin hr{
+.team .team-margin h1{
+    color:white;
+}
+.projects .projects-margin hr, .team .team-margin hr{
   color: black;
   margin-top:30px;
   background-color: black;
@@ -575,9 +587,9 @@ h1 span{
   border:0;
 }
 
-
-
-
+.team .team-margin hr{
+  background-color: white;
+}
 /* projects grid */
 
 .grid{
@@ -588,10 +600,17 @@ h1 span{
   overflow:hidden;
 }
 
+/*
+.team .grid li{
+  border: 0.1px solid #ada074;
+}
+*/
+
 .grid li{
   width:285px;
   margin:0 15px 15px 0;
   float: left;
+  background: #3c3c3c;
   position: relative;
   overflow: hidden;
 }
@@ -600,6 +619,14 @@ h1 span{
   width:285px;
   float: left;
   position: relative;
+}
+
+.team .grid img.image{
+  opacity: 0.85;
+}
+
+.team .grid img.no-image{
+  opacity: 0;
 }
 
 .grid .text {
@@ -639,115 +666,28 @@ h1 span{
 }
 
 .grid p {
-  font-size: 18px;
+  font-size: 20px;
   text-align:center;
   line-height:26px;
-  margin-top:50%;
+  margin-top:35%;
   font-weight: bold;
   letter-spacing:1px;
   color: #FFF;
 }
 
 .grid p.description {
-  font-size: 12px;
-  width:300px;
+  font-size: 14px;
+  width:285px;
   margin-top:20px;
-  text-align:center;
+  text-align: center;
   line-height:20px;
   font-weight: 400;
   color: #FFF;
-  position:relative;
+  position:absolute;
 }
 
 .clear {
     clear:both;
-}
-
-/* team */
-
-.team{
-  position:relative;
-  width:100%;
-  z-index:10;
-  height:400px;
-  /*background:#444444;*/
-  background:url('../img/background/team.jpg') 0px 0px fixed;
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.team .opacity{
-  position:absolute;
-  width:100%;
-  height:400px;
-  background:rgba(79,79,79,0.6);
-}
-
-.team .content{
-  position:absolute;
-  width:900px;
-  height:190px;
-  margin:auto;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-}
-
-.team .content h1{
-  font-size:34px;
-  color:white;
-  text-align:center;
-  margin-top:100px;
-  letter-spacing:6px;
-  font-weight:bold;
-  text-transform:uppercase;
-  line-height:1.2;
-}
-
-.team h2{
-  color:white;
-  letter-spacing:1px;
-  font-size:32px;
-  font-weight:300;
-  text-align:center;
-}
-
-.team .content hr{
-  color: white;
-  background-color: white;
-  margin-top:30px;
-  height: 1px;
-  width:106px;
-  border:0;
-}
-
-.team .content .read-more{
-  width:183px;
-  height:47px;
-  margin:85px auto;
-  line-height:47px;
-  border:1px solid white;
-  text-transform:uppercase;
-  color:white;
-  display:block;
-  cursor:pointer;
-  font-size:14px;
-  letter-spacing:1px;
-  background:none;
-  -webkit-transition: all 0.6s ease-in;
-	-moz-transition: all 0.6s ease-in;
-	-ms-transition: all 0.6s ease-in;
-	-o-transition: all 0.6s ease-in;
-	transition: all 0.6s ease-in;
-}
-
-.team .content .read-more:hover{
-  color:white;
-  background: #ada074;
-  border:1px solid #ada074;
 }
 
 /* Contact */
@@ -773,7 +713,7 @@ h1 span{
   font-size:34px;
   color:black;
   text-align:center;
-  margin-top:120px;
+  margin-top:100px;
   letter-spacing:6px;
   font-weight:bold;
   text-transform:uppercase;
@@ -860,7 +800,6 @@ input{
 input:focus{background:#f4f4f4;}
 
 textarea{
-
   width:420px;
   height:150px;
   border-top:1px solid #333;

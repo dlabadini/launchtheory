@@ -44,7 +44,7 @@ h1 {
   width:300px;
 }
 
-.about hr,.projects .projects-margin hr, .contact hr {
+.about hr,.projects .projects-margin hr, .team .team-margin hr, .contact hr {
   width:106px;
 }
 
@@ -62,17 +62,8 @@ h1 {
   width:300px;
 }
 
-.team .content{
+.team .team-margin{
   width:300px;
-}
-
-.team .logo {
-  width:300px;
-}
-
-.team .logo img {
-  width:80px;
-  padding-bottom:20px;
 }
 
 .contact, .contact .content, .contact .content .form{
@@ -107,7 +98,7 @@ textarea{
   padding-left:0;
 }
 
-.grid li{
+.grid li, .team .grid li{
   margin:0 0 15px 0;
 }
 
@@ -138,10 +129,6 @@ textarea{
   width:540px;
 }
 
-.team .logo img {
-  padding-bottom:20px;
-}
-
 .start-page .content {
   width:300px;
   height:100%;
@@ -167,7 +154,7 @@ h1 {
   width:300px;
 }
 
-.about hr,.projects .projects-margin hr, .contact hr {
+.about hr,.projects .projects-margin hr, .team .team-margin hr, .contact hr {
   width:106px;
 }
 
@@ -185,17 +172,8 @@ h1 {
   width:300px;
 }
 
-.team .content{
-  width:400px;
-}
-
-.team .logo {
-  width:400px;
-}
-
-.team .logo img {
-  width:80px;
-  padding-bottom:20px;
+.team .team-margin{
+  width:300px;
 }
 
 .contact, .contact .content, .contact .content .form{
@@ -292,12 +270,8 @@ textarea{
   width:600px;
 }
 
-.team .content{
-  width:700px;
-}
-
-.team .logo {
-  width:700px;
+.team .team-margin {
+  width:600px;
 }
 
 .contact{
