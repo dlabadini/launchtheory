@@ -1,8 +1,8 @@
 <?php
 
-$name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
+$name = $_POST['contact-name'];
+$email = $_POST['contact-email'];
+$message = $_POST['contact-message'];
 $formcontent="Contact Form\n\nFrom: $name \nMessage: $message";
 $recipient = "devin@launchtheory.io";
 $subject = "LaunchTheory Contact Form Submission";

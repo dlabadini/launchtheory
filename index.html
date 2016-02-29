@@ -29,6 +29,40 @@
     </div>
 </div>
 
+
+<!-- section contact -->
+
+<script type="text/javascript">
+    function ShowContactForm() {
+       var e = document.getElementById('contact');
+       if(e.className == 0)
+          e.className = 'contact-activated';
+       else {
+          e.className = 0;
+        }
+    }
+</script>
+
+  <section id="contact">
+    <section id="contact-inner">
+      <form id="contact-us-form" method="post" action="mail.php">
+        <h3>Do you have a project that needs liftoff? Let's chat.</h3>
+        <div class="input-contact-name"><label for="contact-name">Your Name</label>
+          <input type="text" id="contact-name"></div>
+          <div class="input-contact-email">
+            <label for="contact-email">Your Email Address</label>
+            <input type="text" id="contact-email"></div>
+            <div class="input-contact-message">
+              <label for="contact-message">Your Message</label>
+              <textarea id="contact-message"></textarea></div>
+              <div class="form-contact-controls">
+                <button type="button" class="button" id="form-contact-cancel" onclick="ShowContactForm()">Cancel</button>
+                <button type="submit" class="button" id="form-contact-send">Send</button>
+              </div>
+            </form>
+          </section>
+        </section>
+
 <div class="container">
 
 <!-- section start-page -->
@@ -63,7 +97,7 @@
         <a href="#home"><li href="#home">HOME</li></a>
         <a href="#about"><li href="#about">ABOUT</li></a>
         <a href="#projects"><li href="#projects">PROJECTS</li></a>
-        <a href="#contact"><li href="#contact">CONTACT</li></a>
+        <a href="#contact" onclick="ShowContactForm()"><li href="#contact">CONTACT</li></a>
     </ul>
   <!-- section menu -->
   <section class="menu">
@@ -73,7 +107,7 @@
         <li><a href="#home">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#projects">PROJECTS</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#contact" onclick="ShowContactForm()">CONTACT</a></li>
       </ul>
     </div>
   </section>
@@ -201,34 +235,10 @@
               </a>
             </li>
           </ul>
-          <a href="#contact"><div class="read-more">Get In Touch</div></a>
+          <a href="#contact" onclick="ShowContactForm()"><div class="read-more">Get In Touch</div></a>
       </div>
     </section>
     <div class="clear"></div>
-    <!-- Contact-->
-
-    <section class="contact" id="contact">
-        <h1>Get In Touch</h1>
-        <hr/>
-        <div class="content">
-          <div class="form">
-            <form method="post" action="mail.php" name="kontakt">
-              <div class="column">YOUR NAME<br/><br/>
-                <input name="name" id="name" value="" />
-              </div>
-              <div class="column-2">YOUR E-MAIL<br/><br/>
-                <input name="email" id="email" value="" />
-              </div>
-              <div class="column-3">MESSAGE<br/><br/>
-                <textarea id="message" name="message" ></textarea>
-              </div>
-              <div class="button">
-                <span><input class="submit" id="submit" name="submit" type="submit" value="SEND"></span>
-              </div>
-            </form>
-          </div>
-        </div>
-    </section>
 
 <!--Footer-->
     <section class="footer">
@@ -240,7 +250,7 @@
           <a href="https://github.com/dlabadini" target="_blank">GitHub</a>
           <a href="https://bitbucket.com/dlabadini" target="_blank">BitBucket</a>
           <a href="https://dribbble.com/dlabadini" target="_blank">Dribbble</a>
-          <a href="#contact">Contact</a>
+          <a href="#contact" onclick="ShowContactForm()">Contact</a>
         </div>
 
         <!--

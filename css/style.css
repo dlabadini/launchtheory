@@ -1,22 +1,12 @@
-/* Thomsoon.com - OnePage CSS Responsive theme
--- version 1.0
+/* Some contents from CSS Responsive Theme By Thomsoon.com
 -- Copyright (c) 2014 Thomsoon.com
--- licensed under the MIT
---
+-- Licensed under the MIT
 -- http://www.thomsoon.com/
 --
 */
 
 /* Font Google - strong reaload time */
 @import url(http://fonts.googleapis.com/css?family=Lato:400,300,100,700,900&subset=latin,latin-ext);
-
-
-/*
- * Theme Name: Onepage
- * Author: Thomsoon
- * Created: 14/11/2014
- */
-
 
 .preloader{
   position:fixed;
@@ -35,7 +25,6 @@
   margin-left:-50px;
   margin-top:-50px;
 }
-
 
 html, body{
   font-family: 'Lato', sans-serif;
@@ -74,6 +63,64 @@ h1 span{
   color:#2fa68e;
 }
 
+form input {
+    background-color: #FFF;
+    border: 0;
+    border-radius: 3px;
+    color: #8f9091;
+    height: 48px;
+    float: left;
+    font-size: 14px;
+    letter-spacing: .04em;
+    margin: 0 11px 0 0;
+    outline: none;
+    padding: 2px 20px 0;
+    text-transform: uppercase;
+    width: 340px;
+}
+
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    cursor: auto;
+    padding: 1px;
+    border: 2px inset;
+}
+
+.button {
+    background-color: #0ec9e3;
+    border: 1px solid #0ec9e3;
+    color: #FFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: .08em;
+    line-height: 12px;
+    padding: 19px 25px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    word-spacing: .15em;
+}
+
+form button {
+    background-color: #0ec9e3;
+    border: 0;
+    border-radius: 3px;
+    color: #FFF;
+    cursor: pointer;
+    float: left;
+    font-size: 14px;
+    height: 50px;
+    padding: 6px 0 4px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    width: 220px;
+    word-spacing: .15em;
+}
+.button {
+    transition: background-color .4s;
+}
 
 ::selection {
   background: #ada074;
@@ -90,12 +137,142 @@ h1 span{
   position:absolute;
   width:100%;
   height:100%;
+  overflow: none;
 }
 
-
-
-
-
+/* Contact Section*/
+.contact-activated #contact-inner {
+    height: 380px;
+}
+.contact-activated #base-chart {
+    top: 361px!important;
+}
+.contact-activated #scroll-arrow {
+    bottom: -50px!important;
+}
+#contact {
+    background: #0bbbd3;
+    position: relative;
+}
+#contact-inner {
+    height: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    transition: height .3s;
+    width: 1022px;
+}
+#contact-inner h3 {
+    color: #FFF;
+    font-size: 24px;
+    margin: 6px 0 12px;
+    padding: 24px 0;
+    text-align: center;
+}
+#contact-inner p.error {
+    float: none!important;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#contact-inner label {
+    color: #FFF;
+    display: block;
+    font-size: 12px;
+    letter-spacing: .15em;
+    margin: 0 0 8px;
+    text-transform: uppercase;
+}
+#contact-inner label .error {
+    color: #b1271d;
+}
+#contact-inner input {
+    width: 380px;
+    text-transform: none;
+    color: #111;
+}
+#contact-inner textarea {
+    background-color: #FFF;
+    border: 0;
+    border-radius: 3px;
+    color: #111;
+    font-size: 14px;
+    height: 115px;
+    letter-spacing: .04em;
+    margin: 0;
+    outline: none;
+    padding: 20px;
+    resize: none;
+    text-transform: none;
+    width: 525px;
+}
+#contact-inner div {
+    clear: left;
+    float: left;
+    margin: 0 0 12px;
+}
+#contact-inner .input-contact-name,
+#contact-inner #contact-inner .input-contact-email {
+    margin-right: 25px;
+}
+#contact-inner .input-contact-name {
+    margin-bottom: 35px;
+}
+#contact-inner .input-contact-message {
+    clear: right;
+    float: right;
+    margin-bottom: 0;
+    margin-top: -105px;
+}
+#contact-inner .form-contact-controls {
+    float: right;
+    margin-top: 6px;
+}
+#contact-inner button {
+    width: 170px;
+}
+#contact-inner #form-contact-cancel {
+    background-color: #08a2bd;
+    border: none;
+    margin-right: 15px;
+}
+#contact-inner #form-contact-cancel:hover {
+    background-color: #06869d;
+}
+#contact-inner #form-contact-send {
+    background-color: #26282b;
+    border: none;
+}
+#contact-inner #form-contact-send:hover {
+    background-color: #333;
+}
+#contact-inner #contact-thankyou {
+    margin: 47px 0 0;
+    width: 100%;
+}
+#contact-inner #contact-thankyou h3 {
+    font-size: 36px;
+    letter-spacing: .04em;
+    margin-bottom: 6px;
+}
+#contact-inner #contact-thankyou p {
+    color: #FFF;
+    font-size: 28px;
+    letter-spacing: .04em;
+    text-align: center;
+}
+#contact-inner #contact-thankyou .button {
+    background-color: #08a2bd;
+    border: none;
+    border-radius: 3px;
+    display: block;
+    font-size: 14px;
+    letter-spacing: .08em;
+    margin: 30px auto 0;
+    padding: 19px 25px;
+    width: 140px;
+}
+#contact-inner #contact-thankyou .button:hover {
+    background-color: #06869d;
+}
 
 /* Start page */
 
@@ -519,6 +696,7 @@ h1 span{
 
 .team{
   background:#444444;
+  overflow: scroll;
 }
 
 .projects{
@@ -528,7 +706,7 @@ h1 span{
 .projects .projects-margin, .team .team-margin{
   position:relative;
   width:900px;
-  overflow:hidden;
+  overflow: hidden;
   margin:0 auto;
 }
 
@@ -690,156 +868,11 @@ h1 span{
     clear:both;
 }
 
-/* Contact */
-
-.contact{
-  position:relative;
-  width:100%;
-  background:white;
-  z-index:10;
-  overflow:hidden;
-  margin-bottom: 300px;
-}
-
-
-.contact .content{
-  position:relative;
-  width:900px;
-  overflow:hidden;
-  margin: 60px auto 65px auto;
-}
-
-.contact h1{
-  font-size:34px;
-  color:black;
-  text-align:center;
-  margin-top:100px;
-  letter-spacing:6px;
-  font-weight:bold;
-  text-transform:uppercase;
-  line-height:1.2;
-}
-
-.contact hr{
-  color: black;
-  margin-top:30px;
-  background-color: black;
-  height: 1px;
-  width:106px;
-  border:0;
-}
-
-.contact .content .form{
-  width:455px;
-  overflow:hidden;
-  height:auto;
-  float:left;
-}
-
-.contact .content .form .column{
-  width:180px;
-  overflow:hidden;
-  height:auto;
-  float:left;
-  letter-spacing:1px;
-  margin-bottom:30px;
-}
-
-.contact .content .form .column-2{
-  width:210px;
-  padding-left:60px;
-  overflow:hidden;
-  height:auto;
-  float:left;
-  letter-spacing:1px;
-  margin-bottom:30px;
-}
-
-.contact .content .form .column-3{
-  width:450px;
-  overflow:hidden;
-  height:auto;
-  float:left;
-  letter-spacing:1px;
-}
-
-.contact .content .contact-text{
-  width:405px;
-  overflow:hidden;
-  height:auto;
-  font-weight:300;
-  float:left;
-  padding-left:40px;
-  color:black;
-  font-size:14px;
-  line-height:26px;
-}
-
-strong{
-  font-weight:700;
-
-}
-
-input{
-  width:180px;
-  height:40px;
-  background:#f8f7f7;
-  border-top:1px solid #333;
-  border-bottom:0;
-  border-left:0;
-  border-right:0;
-  color:#333;
-  font-weight:300;
-  line-height:40px;
-  padding-left:15px;
-  font-family: 'Lato', sans-serif;
-  font-size:14px;
-  margin-bottom:10px;
-}
-
-input:focus{background:#f4f4f4;}
-
-textarea{
-  width:420px;
-  height:150px;
-  border-top:1px solid #333;
-  border-bottom:0;
-  line-height:20px;
-  border-left:0;
-  border-right:0;
-  background:#f8f7f7;
-  color:#333;
-  font-weight:300;
-  padding:15px 0 0 15px;
-  font-family: 'Lato', sans-serif;
-  font-size:14px;
-  margin-bottom:10px;
-}
-
-textarea:focus{background:#f4f4f4;}
-
-
-input.submit{
-  width:100px;
-  height:34px;
-  float:right;
-  margin:20px 10px 0 0;
-  border:0;
-  font-weight:700;
-  text-align:right;
-  background:none;
-  -webkit-transition: all 0.6s ease-in;
-	-moz-transition: all 0.6s ease-in;
-	-ms-transition: all 0.6s ease-in;
-	-o-transition: all 0.6s ease-in;
-	transition: all 0.6s ease-in;
-}
-
 /* Footer */
 
 
 .footer{
-  position:fixed;
+  position: relative;
   bottom:0;
   width:100%;
   background:#3c3c3c;

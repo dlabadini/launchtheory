@@ -45,10 +45,7 @@
 
 
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-
     $(".footer").css( "position", "relative" );
-    $(".contact").css( "marginBottom", "0" );
-
 }
 else
 {
@@ -56,7 +53,7 @@ else
   // FadeTo elements
   if ( $(window).width() > 1023) {
 
-    tiles = $("h2, h3, .column-one, .column-two, .column-three, .grid li, .contact .content .form, .contact .content .contact-text ").fadeTo(0, 0);
+    tiles = $("h2, h3, .column-one, .column-two, .column-three, .grid li, .contact .content .form, .contact .contact-inner").fadeTo(0, 0);
 
     $(window).scroll(function(d,h) {
       tiles.each(function(i) {
