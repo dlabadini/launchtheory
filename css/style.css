@@ -151,8 +151,9 @@ form button {
     bottom: -50px!important;
 }
 #contact {
-    background: #0bbbd3;
+    /*background: #0bbbd3;*/
     position: relative;
+    background-color: #ada074;
 }
 #contact-inner {
     height: 0;
@@ -160,10 +161,12 @@ form button {
     overflow: hidden;
     transition: height .3s;
     width: 1022px;
+    background-color: #ada074;
 }
 #contact-inner h3 {
     color: #FFF;
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: 300;
     margin: 6px 0 12px;
     padding: 24px 0;
     text-align: center;
@@ -230,12 +233,13 @@ form button {
     width: 170px;
 }
 #contact-inner #form-contact-cancel {
-    background-color: #08a2bd;
-    border: none;
+    background-color: #ada074;
+    border:1px solid white;
     margin-right: 15px;
 }
 #contact-inner #form-contact-cancel:hover {
-    background-color: #06869d;
+    background-color: #fff;
+    color: black;
 }
 #contact-inner #form-contact-send {
     background-color: #26282b;
@@ -695,7 +699,7 @@ form button {
 }
 
 .team{
-  background:#444444;
+  background: white;
   overflow: scroll;
 }
 
@@ -731,11 +735,6 @@ form button {
 	letter-spacing:1px;
 }
 
-.team .team-margin .read-more{
-  color: #fff;
-  border: 1px solid #fff;
-}
-
 .projects .projects-margin .read-more:hover, .team .team-margin .read-more:hover{
   background:#ada074;
   color:white;
@@ -753,9 +752,6 @@ form button {
   line-height:1.2;
 }
 
-.team .team-margin h1{
-    color:white;
-}
 .projects .projects-margin hr, .team .team-margin hr{
   color: black;
   margin-top:30px;
@@ -765,9 +761,6 @@ form button {
   border:0;
 }
 
-.team .team-margin hr{
-  background-color: white;
-}
 /* projects grid */
 
 .grid{
@@ -799,8 +792,15 @@ form button {
   position: relative;
 }
 
+.team li{
+  background: #ada074;
+}
+
 .team .grid img.image{
   opacity: 0.85;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #fff;
 }
 
 .team .grid img.no-image{
