@@ -333,7 +333,6 @@ form button {
   width:145px;
   height: 200px;
   margin:0 auto 50px;
-
 }
 
 
@@ -793,7 +792,7 @@ form button {
 }
 
 .team li{
-  background: #ada074;
+  background: #ada074; /*#ddd*/
 }
 
 .team .grid img.image{
@@ -813,7 +812,7 @@ form button {
   height:100%;
   background: rgba(173,160,116,1);
   z-index: 2;
-  opacity:0;
+  opacity: 0;
     -webkit-transition: all 0.6s ease-in;
 	-moz-transition: all 0.6s ease-in;
 	-ms-transition: all 0.6s ease-in;

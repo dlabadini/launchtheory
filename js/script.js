@@ -53,7 +53,7 @@ else
   // FadeTo elements
   if ( $(window).width() > 1023) {
 
-    tiles = $("h2, h3, .column-one, .column-two, .column-three, .grid li, .contact .content .form, .contact .contact-inner").fadeTo(0, 0);
+    tiles = $("h2, h3, .column-one, .column-two, .column-three, .grid li, .contact .content .form, .contact .contact-inner").fadeTo(0, 1);
 
     $(window).scroll(function(d,h) {
       tiles.each(function(i) {
