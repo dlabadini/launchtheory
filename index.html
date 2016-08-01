@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!--#CBAB6E-->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Launch Theory - Reach Escape Velocity</title>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Launch Theory - Reach Escape Velocity</title>
+  <link rel="shortcut icon" href="images/favicon.png">
+  <meta name="description" content="Launch Theory is a consulting company to early stage startups and a startup lab for my personal ideas."/>
+  <meta name="keywords" content="startup, start-up, consulting, venture capital, lab, incubator, early stage, branding, strategy, product management, web design, analytics"/>
+  <meta name="author" content="">
 
-		<meta name="description" content="Launch Theory is a consulting company to early stage startups and a startup lab for my personal ideas."/>
-		<meta name="keywords" content="startup, start-up, consulting, venture capital, lab, incubator, early stage, branding, strategy, web design, analytics"/>
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="shortcut icon" href="img/logos/favicon.png">
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
 
-		<link rel="stylesheet" type="text/css" href="css/reset.css" />
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" href="css/style-responsive.css" />
-  	<!--[if lt IE 9]>
-  		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  	<![endif]-->
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/hover.css">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
 </head>
-
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -31,268 +41,92 @@
     ga('require', 'linkid');
     ga('send', 'pageview');
 </script>
+
 <body>
-
-<div class="preloader" id="preloader">
-    <div class="item">
-      <img src="img/icons/loading.gif">
-    </div>
-</div>
-
-
-<!-- section contact -->
-
-<script type="text/javascript">
-    function ShowContactForm() {
-       var e = document.getElementById('contact');
-       if(e.className == 0)
-          e.className = 'contact-activated';
-       else {
-          e.className = 0;
-        }
-    }
-</script>
-
-  <section id="contact">
-    <section id="contact-inner">
-      <form id="contact-us-form" method="post" action="mail.php">
-        <h3>Do you have a project that needs liftoff? Let's chat.</h3>
-        <div class="input-contact-name"><label for="contact-name">Your Name</label>
-          <input type="text" id="contact-name"></div>
-          <div class="input-contact-email">
-            <label for="contact-email">Your Email Address</label>
-            <input type="text" id="contact-email"></div>
-            <div class="input-contact-message">
-              <label for="contact-message">Your Message</label>
-              <textarea id="contact-message"></textarea></div>
-              <div class="form-contact-controls">
-                <button type="button" class="button" id="form-contact-cancel" onclick="ShowContactForm()">Cancel</button>
-                <button type="submit" class="button" id="form-contact-send">Send</button>
-              </div>
-            </form>
-          </section>
-        </section>
-
-<div class="container">
-
-<!-- section start-page -->
-
-  <section class="start-page parallax-background" id="home">
-
-    <div class="opacity"></div> <!-- Opacity color -->
-      <div class="content">
-        <div class="text">
-
-          <div class="logo"><img src="img/logos/logo.png"></div>
-
-          <h1>Launch Theory</h1><hr/>
-          <p>It's All About The Launch.</p>
-
-          <a href="#about"><div class="read-more">Learn More</div></a>
-          <div class="arrow-down"></div>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+  <section class="socials">
+    <a href="http://www.linkedin.com/in/dlabadini" target="_blank"><span class="socicon-linkedin black-color pulse"></span></a>
+    <a href="http://www.angel.co/dlabadini" target="_blank"><span class="socicon-angellist black-color pulse"></span></a>
+    <a href="https://medium.com/@devin.labadini/" target="_blank"><span class="socicon-medium black-color pulse"></span></a>
+    <a href="https://github.com/dlabadini?tab=overview" target="_blank"><span class="socicon-github black-color pulse"></span></a>
+    <a href="https://dribbble.com/dlabadini" target="_blank"><span class="socicon-dribbble black-color pulse"></span></a>
+    <a href="https://instagram.com/d.labadini" target="_blank"><span class="socicon-instagram black-color pulse"></span></a>
+    <a href="https://inbox.google.com/?mailto=mailto:devin@launchtheory.io" target="_blank"><span class="socicon-mail black-color pulse"></span></a>
+  </section>
+  <section class="header">
+    <h1>Hi, I'm Devin.<br> I'm a  product manager and entrepreneur. </h1>
+    <p>I love solving big bold problems with technology. <br>You can find me running around San Diego, California.</p>
+    <p>
+      <span class="strong">Currently:</span> Available For Opportunities
+    </p>
+  </section>
+    <br><br>
+    <!--First Row-->
+    <div class="row" style="height: 300px">
+      <div class="one-half column border-effect hover-effect">
+        <div class="overlay">
+          <a href="http://www.angrybear.co/" target="_blank"><h2>Angry Bear</h2></a>
+          <p class="icon-links">
+              <a href="http://www.twitter.com/angrybearco" target="_blank"><span class="socicon-twitter angry-color"></span></a>
+              <a href="http://www.facebook.com/angrybearco" target="_blank"><span class="socicon-facebook angry-color"></span></a>
+              <a href="http://www.instagram.com/angrybearco" target="_blank"><span class="socicon-instagram angry-color"></span></a>
+          </p>
         </div>
+        <img class="u-max-full-width bear" src="images/angrybear.png">
       </div>
-
-  </section>
-
-  <!-- section menu mobile -->
-
-  <section class="menu-media">
-    <div class="menu-content">
-      <div class="logo"></div>
-      <div class="icon"><a href="#"><img src="img/icons/menu-media.png"/></a></div>
-    </div>
-  </section>
-    <ul class="menu-click">
-        <a href="#home"><li href="#home">HOME</li></a>
-        <a href="#about"><li href="#about">ABOUT</li></a>
-        <a href="#projects"><li href="#projects">PROJECTS</li></a>
-        <a href="#contact" onclick="ShowContactForm()"><li href="#contact">CONTACT</li></a>
-    </ul>
-  <!-- section menu -->
-  <section class="menu">
-    <div class="menu-content">
-    <div class="logo">Launch Theory</div>
-      <ul id="menu">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#projects">PROJECTS</a></li>
-        <li><a href="#contact" onclick="ShowContactForm()">CONTACT</a></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- section about -->
-
-  <section class="about" id="about">
-  <div class="content">
-
-    <h1>ABOUT</h1>
-    <hr/>
-    <p class="title">Launch Theory can help your business reach escape velocity. Launch Theory specializes in product, strategy, operations, data and analytics consulting to early stage start-ups.</p>
-      <div class="column-one">
-        <div class="circle-one"></div>
-          <h2>DREAMERS</h2>
-          <p>Nobthing great has every been built without big, bold, and crazy ideas. We will help you set and execute an agressive trajectory for your product.</p>
+      <div class="one-half column border-effect hovereffect">
+        <div class="overlay">
+         <a class="info" href="proper.html">Proper: Fitbit for Speech</a>
+        </div>
+        <img class="u-max-full-width bear" src="images/proper-logo.png">
       </div>
-      <div class="column-two">
-        <div class="circle-two"></div>
-          <h2>STRATEGIC</h2>
-          <p>We excel at looking through the eyes of users and understanding your market — analyzing, simplifying, and building products alongside you within a tight timeframe.</p>
-      </div>
-      <div class="column-three">
-        <div class="circle-three"></div>
-        <h2>GRITTY</h2>
-        <p>We eat, sleep, and breath all things startup. We will be your work horse; we'll do anything and everything to help you succeed.</p>
     </div>
+    <!--Second Row-->
+    <div class="row u-full-width card card-effect border-effect" style="height: 300px; padding: 50px">
+        <div class="card-front" style="width:inherit">
+          <img src="images/peachjar.svg" style="height:70%;display: block;margin: 0px auto; padding: 5rem">
+        </div>
+        <div class="card-back">
+          <p class="recommendation">
+            I have had the opportunity to work with thousands of talented people in my career. Once in awhile you cross paths with an individual who stands out above the pack. Devin is one of those people. Devin has only one measure of success: excellence. He brings passion, energy, intelligence, and a hungry entrepreneurial spirit to everything he does. <br><br>Devin is a very strategic thinker who is full of great ideas. Devin truly understands being a great product leader: manage product not people, evangelize, and the voice of the customer trumps all. <br><br>“Product” may have been the focus while working on projects with me at Peachjar, but Devin can wear any hat. He tackled analytics, brand messaging, pricing, talent acquisition, culture change, and research on the development stack that would be best for our next generation product. <br><br>Devin is CEO material and when he pursues his own startup, I would invest. I highly recommend Devin to any organization.<br><br> - Mike Durham, Founder + CEO of Peachjar.
+          </p>
+        </div>
+    </div>
+    <!--Third Row-->
+    <!--
+    <div class="row">
+      <div class="one-half column border-effect">
+        <img class="u-max-full-width" src="images/peachjar.png">
+      </div>
+      <div class="one-half column border-effect">
+        <img class="u-max-full-width" src="images/peachjar.png">
+      </div>
+    </div>
+    -->
+    <br><br>
   </div>
-  </section>
-  <div class="clear"></div>
 
-  <!-- projects-->
-
-  <section class="projects" id="projects">
-    <div class="projects-margin">
-      <h1>PROJECTS</h1>
-      <hr/>
-        <ul class="grid">
-    <!-- 1 item projects-->
-          <li>
-            <a href="#proper" target="_blank">
-              <img src="img/projects/proper-logo.png" alt="Project Proper" />
-                <div class="text">
-                  <p>PROPER</p>
-                  <p class="description"></p>
-                </div>
-            </a>
-          </li>
-
-          <!-- 2 item projects-->
-
-          <li>
-            <a href="http://angrybear.co" target="_blank">
-              <img src="img/projects/bear-logo.png" alt="Project Angry Bear" />
-                <div class="text">
-                  <p>ANGRY BEAR</p>
-                  <p class="description"></p>
-              </div>
-            </a>
-          </li>
-
-          <!-- 3 item projects-->
-
-          <li>
-            <a href="http://properfoamroller.com/" target="_blank">
-              <img src="img/projects/pillow-logo.png" alt="Proper Pillow" />
-                <div class="text">
-                  <p>PROPER PILLOW</br>PROPER FOAM ROLLER</p>
-                  <p class="description"></p>
-              </div>
-            </a>
-          </li>
-
-
-          <!-- 4 item projects
-
-          <li>
-            <a href="#">
-              <img src="img/projects/4.png" alt="projects item" />
-                <div class="no-text">
-                  <p></p>
-                  <p class="description"></p>
-              </div>
-            </a>
-          </li>
--->
-        </ul>
-
-   <a href="#team"><div class="read-more">Meet The Team</div></a>
-   </div>
-   </section>
-   <div class="clear"></div>
-
-    <!-- team-->
-    <section class="team parallax-background-team" id="team">
-      <div class="team-margin">
-        <h1>TEAM</h1>
-        <hr/>
-          <ul class="grid">
-            <li>
-              <a href="https://www.linkedin.com/in/paul-hallee-55554" target="_blank">
-                <img class="no-image" src="img/team/you.png" alt="Paul" />
-                  <div class="text">
-                    <p>Paul</p>
-                    <p class="description">Advisor</p>
-                  </div>
-              </a>
-            </li>
-            <li>
-              <a href="https://linkedin.com/in/dlabadini" target="_blank">
-                <img class="image" src="img/team/devin.jpg" alt="Devin" />
-                  <div class="text">
-                    <p>Devin</p>
-                    <p class="description">Chief Launch Theorist</p>
-                  </div>
-              </a>
-            </li>
-            <li>
-              <a href="#contact" target="_blank">
-                <img class="no-image" src="img/team/you.png" alt="You" />
-                  <div class="text">
-                    <p>Join Us</p>
-                    <p class="description">What's you passion?</p>
-                  </div>
-              </a>
-            </li>
-          </ul>
-          <a href="#contact" onclick="ShowContactForm()"><div class="read-more">Get In Touch</div></a>
-      </div>
-    </section>
-    <div class="clear"></div>
-
-<!--Footer-->
-    <section class="footer">
-
-        <div class="logo"><img src="img/logos/logo-footer.png"></div>
-        <div class="menu-footer">
-          <a href="#home">Home</a>
-          <a href="https://linkedin.com/in/dlabadini" target="_blank">LinkedIn</a>
-          <a href="https://github.com/dlabadini" target="_blank">GitHub</a>
-          <a href="https://bitbucket.com/dlabadini" target="_blank">BitBucket</a>
-          <a href="https://dribbble.com/dlabadini" target="_blank">Dribbble</a>
-          <a href="#contact" onclick="ShowContactForm()">Contact</a>
+  <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-4 hide-small"></div>
+          <div class="col-4">
+            <div class="line"></div>
+          </div>
+          <div class="col-4 hide-small"></div>
         </div>
-
-        <!--
-        <div class="copyright">© All Rights Reserved Launch Theory</div>
-        -->
-    </section>
-
-  <!--End Main Div, launchtheory-->
-</div>
-
-	<!-- Scripts -->
-
-	<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
-	<script src="js/jquery-ui-1.10.4.min.js" type="text/javascript"></script> <!-- jQuery -->
-	<script src="js/jquery.nicescroll.js"></script> <!-- jQuery NiceScroll -->
-	<script src="js/jquery.sticky.js"></script> <!-- jQuery Stick Menu -->
-	<script src="js/masonry.pkgd.min.js"></script> <!-- All script -->
-	<script src="js/imagesloaded.pkgd.min.js"></script> <!-- All script -->
-
-   <script>
-     $(function(){
-
-       var $container = $('.grid');
-
-       $container.imagesLoaded( function(){
-         $container.masonry({
-           itemSelector : 'li'
-         });
-       });
-     });
-   </script>
-	<script src="js/jquery.parallax.js"></script> <!-- jQuery Parallax -->
-	<script src="js/script.js"></script> <!-- All script -->
+        <div class="footer-content">
+          <p>
+            Thanks for stopping by.<br/>
+            You are limitless.
+          </p>
+          <div class="equals"></div>
+        </div>
+      </div>
+    </footer>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
