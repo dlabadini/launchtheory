@@ -157,7 +157,8 @@
   top: 0;
   left:0;
   opacity:0;
-  background-color:rgba(0,0,0,0.1);
+  border-radius: inherit;
+  background-color: #7f8c8d;
   -webkit-transition:all .4s ease-in-out;
   transition:all .4s ease-in-out;
   z-index: 1;

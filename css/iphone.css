@@ -1,8 +1,7 @@
 <style type="text/css">
 
 /*
-Title: CSS iPhone
-Author: Zach Cole
+Credit CSS iPhone to Zach Cole
 */
 
 #sample {
@@ -15,51 +14,6 @@ html {
 	background: #FBF6A1;
 }
 
-/** === STARBURST === **/
-
-.burst {
-    background: #ffeb3b;
-    width: 90px;
-    height: 90px;
-    position: absolute;
-    top: -30px;
-    left: -30px;
-    text-align: center;
-    z-index: -1;
-    -webkit-animation: spin 8s linear infinite;
-    -moz-animation: spin 8s linear infinite;
-    animation: spin 8s linear infinite;
-}
-
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-
-.burst:before,
-.burst:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 90px;
-    width: 90px;
-    background: #ffeb3b;
-}
-
-.burst:before {
-    -webkit-transform: rotate(30deg);
-       -moz-transform: rotate(30deg);
-        -ms-transform: rotate(30deg);
-         -o-transform: rotate(30deg);
-}
-
-.burst:after {
-    -webkit-transform: rotate(60deg);
-       -moz-transform: rotate(60deg);
-        -ms-transform: rotate(60deg);
-         -o-transform: rotate(60deg);
-}
-
 /** === iPHONE === **/
 
 .iphone-body {
@@ -67,7 +21,7 @@ html {
 	background: #fff;
 	height: 600px;
 	width: 300px;
-	margin: 25px auto 0 auto;
+	margin: 10px auto 10px auto;
 	border-radius: 40px;
 	box-shadow: 0 6px 0px 0 #9999cc;
 }
@@ -124,6 +78,11 @@ html {
 	margin: 0 auto;
 	border: 4px solid #e7ebec;
 	border-radius: 4px;
+}
+
+.iphone-screen img{
+	height: 100%;
+	width: 100%;
 }
 
 .banner {

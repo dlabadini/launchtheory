@@ -58,22 +58,43 @@ p {
 }
 
 .bear {
-  padding: 5rem;
+ padding: 5rem;
  height: inherit;
- width: auto;
+}
+
+/* Bigger than 550 */
+@media (min-width: 550px) {
+  
+  .column:first-child,
+  .columns:first-child {
+    margin-bottom: 1.25rem;
+    border-top-left-radius: 1rem;
+   }
+
+ .column:last-child,
+ .columns:last-child {
+   margin-bottom: 1.25rem;
+   border-top-right-radius: 1rem;
+  }
+
+ .row:last-child {
+   border-bottom-right-radius: 1rem;
+   border-bottom-left-radius: 1rem;
+ }
+
 }
 
 .border-effect {
   margin-bottom: 1.25rem;
-  border-radius: .3125rem;
-  box-shadow: 0 2px 6px 0 rgba(0,0,0,.4);
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,.35);
   text-align: center;
 }
 
 .white-color{color:#fff}
 .black-color{color:#000}
+.dark-blue-color{color: #333447}
 .angry-color{color: #251C17}
-.strong {font-weight: 500;}
+.strong {font-weight: 500}
 
 a.email{
   color:#000;
@@ -88,6 +109,14 @@ a.email{
   font-size: 22px;
   margin-right: 15px;
   text-decoration: none;
+}
+
+.portfolio .peachjar, .portfolio .ab-proper{
+  height: 300px;
+}
+
+.portfolio .peachjar {
+  padding: 50px;
 }
 
 .card {
@@ -105,6 +134,8 @@ a.email{
   left: 0;
   height: 100%;
   width: auto;
+  border-radius: inherit;
+  box-shadow: inherit;
 }
 
 .card-front,
@@ -116,7 +147,15 @@ a.email{
 }
 
 .card-front {
-  background-color: #2c3e50;
+  width:inherit;
+  background-color: #2C3E50;
+}
+
+.card-front img{
+  height:70%;
+  display: block;
+  margin: 0px auto;
+  padding: 5rem;
 }
 
 .card-back {
