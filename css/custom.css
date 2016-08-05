@@ -8,7 +8,7 @@
 
 h1 {
   font-family: 'Source Serif Pro', Georgia, serif;
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-weight: 600;
   letter-spacing: -0.02rem;
 }
@@ -64,7 +64,7 @@ p {
 
 /* Bigger than 550 */
 @media (min-width: 550px) {
-  
+
   .column:first-child,
   .columns:first-child {
     margin-bottom: 1.25rem;

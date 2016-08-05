@@ -11,7 +11,7 @@ html {
 	top: 0;
 	left: 0;
 	margin: 0;
-	background: #FBF6A1;
+	background: none;
 }
 
 /** === iPHONE === **/
@@ -23,7 +23,8 @@ html {
 	width: 300px;
 	margin: 10px auto 10px auto;
 	border-radius: 40px;
-	box-shadow: 0 6px 0px 0 #9999cc;
+	box-shadow: 1px 6px 6px 1px #9999cc;
+  border-top: 1px solid #e7ebec;
 }
 
 .iphone-body:before {
