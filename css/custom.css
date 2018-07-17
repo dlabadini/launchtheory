@@ -57,11 +57,6 @@ p {
   overflow: hidden;
 }
 
-.bear {
- padding: 5rem;
- height: inherit;
-}
-
 /* Bigger than 550 */
 @media (min-width: 550px) {
 
@@ -96,6 +91,10 @@ p {
 .angry-color{color: #251C17}
 .strong {font-weight: 500}
 
+.tnlc {
+   background: linear-gradient(to bottom right, rgb(61,184,194), rgb(61,184, 210));
+}
+
 a.email{
   color:#000;
   text-decoration: underline;
@@ -111,12 +110,34 @@ a.email{
   text-decoration: none;
 }
 
-.portfolio .peachjar, .portfolio .ab-proper{
+.portfolio .peachjar,
+.portfolio .bear,
+.portfolio .proper,
+.portfolio .tnlc,
+.portfolio .coachdon{
   height: 300px;
 }
 
 .portfolio .peachjar {
   padding: 50px;
+  background-color: #2C3E50;
+}
+
+.portfolio .harley {
+  height: 500px;
+  padding: 5%;
+}
+
+.angry-bear {
+ padding: 5rem;
+ height: inherit;
+}
+
+.harley-img,
+.coachdon-img{
+  height: 100%;
+  display: block;
+  margin: 0px auto;
 }
 
 .card {
@@ -147,18 +168,18 @@ a.email{
 }
 
 .card-front {
-  width:inherit;
-  background-color: #2C3E50;
+  width:100%;
 }
 
 .card-front img{
-  height:70%;
+  height:100%;
   display: block;
   margin: 0px auto;
   padding: 5rem;
 }
 
 .card-back {
+  background-color: white;
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
           overflow: hidden;

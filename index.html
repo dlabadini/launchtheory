@@ -30,6 +30,31 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
+  <!-- Start of Async Drift Code -->
+  <script>
+  !function() {
+    var t;
+    if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
+    t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+    t.factory = function(e) {
+      return function() {
+        var n;
+        return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+      };
+    }, t.methods.forEach(function(e) {
+      t[e] = t.factory(e);
+    }), t.load = function(t) {
+      var e, n, o, i;
+      e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
+      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
+      n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+    });
+  }();
+  drift.SNIPPET_VERSION = '0.3.1';
+  drift.load('chsm7vvtgrm4');
+  </script>
+  <!-- End of Async Drift Code -->
+
 </head>
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -53,49 +78,60 @@
     <a href="https://github.com/dlabadini?tab=overview" target="_blank"><span class="socicon-github dark-blue-color pulse"></span></a>
     <a href="https://dribbble.com/dlabadini" target="_blank"><span class="socicon-dribbble dark-blue-color pulse"></span></a>
     <a href="https://instagram.com/d.labadini" target="_blank"><span class="socicon-instagram dark-blue-color pulse"></span></a>
-    <a href="https://inbox.google.com/?mailto=mailto:devin@launchtheory.io" target="_blank"><span class="socicon-mail dark-blue-color pulse"></span></a>
+    <a href="https://inbox.google.com/?mailto=mailto:devin.labadini@gmail.com" target="_blank"><span class="socicon-mail dark-blue-color pulse"></span></a>
   </section>
   <section class="header">
     <h1>Hi, I'm Devin.<br> I'm a  product manager + entrepreneur. </h1>
     <div class="row">
       <div class="eight columns">
-        <p>I love solving big bold problems with technology. You can find me running around San Diego, California.</p>
-        <p><span class="strong">Currently:</span> Available For Opportunities</p>
+        <p>I'm on a mission to leverage technology to make the world a better place by shipping products that are a joy to use and gives people superpowers. You can find me running around San Diego, California.</p>
+        <p><span class="strong"></span></p>
       </div>
     </div>
   </section>
     <br><br>
-    <!--First Row-->
     <div class="portfolio">
-    <div class="row ab-proper">
-      <div class="one-half column border-effect hover-effect">
+    <!--First Row -->
+    <div class="row">
+      <div class="one-half column border-effect hovereffect tnlc">
         <div class="overlay">
-          <a href="http://www.angrybear.co/" target="_blank"><h2>Angry Bear</h2></a>
-          <p class="icon-links">
-              <a href="http://www.twitter.com/angrybearco" target="_blank"><span class="socicon-twitter angry-color"></span></a>
-              <a href="http://www.facebook.com/angrybearco" target="_blank"><span class="socicon-facebook angry-color"></span></a>
-              <a href="http://www.instagram.com/angrybearco" target="_blank"><span class="socicon-instagram angry-color"></span></a>
-          </p>
+         <a class="info" href="https://getthenewlife.com/" target="_blank">New Life Challenge</a>
         </div>
-        <img class="u-max-full-width bear" src="images/angrybear.png">
+        <img class="u-max-full-width angry-bear" src="images/tnlc/tnlc_white.svg">
       </div>
-      <div class="one-half column border-effect hovereffect">
+      <div class="one-half column border-effect hovereffect bear">
         <div class="overlay">
-         <a class="info" href="proper.html">Proper: Fitbit for Speech</a>
+          <a class="info" href="https://www.angrybear.co/" target="_blank">Angry Bear</a>
         </div>
-        <img class="u-max-full-width bear" src="images/proper-logo.png">
+        <img class="u-max-full-width angry-bear" src="images/angrybear.png">
       </div>
     </div>
-    <!--Second Row-->
-    <div class="row u-full-width card card-effect border-effect peachjar">
-        <div class="card-front">
-          <img src="images/peachjar.svg">
+      <!--Harley Davidson-->
+      <div class="row">
+      <div class="u-max-full-width border-effect hovereffect harley">
+          <div class="overlay">
+            <a class="info" href="https://maps.harley-davidson.com/" target="_blank">Harley Davidson:<br/> Google Maps for Bikers</a>
+          </div>
+          <img class="harley-img" src="images/harley.jpg">
+      </div>
         </div>
-        <div class="card-back">
-          <p class="recommendation">
-            I have had the opportunity to work with thousands of talented people in my career. Once in awhile you cross paths with an individual who stands out above the pack. Devin is one of those people. Devin has only one measure of success: excellence. He brings passion, energy, intelligence, and a hungry entrepreneurial spirit to everything he does. <br><br>Devin is a very strategic thinker who is full of great ideas. Devin truly understands being a great product leader: manage product not people, evangelize, and the voice of the customer trumps all. <br><br>“Product” may have been the focus while working on projects with me at Peachjar, but Devin can wear any hat. He tackled analytics, brand messaging, pricing, talent acquisition, culture change, and research on the development stack that would be best for our next generation product. <br><br>Devin is CEO material and when he pursues his own startup, I would invest. I highly recommend Devin to any organization.<br><br> - Mike Durham, Founder + CEO of Peachjar.
-          </p>
-        </div>
+    <!--Peachjar + Coach Don-->
+    <div class="row">
+      <div class="one-half column card card-effect border-effect peachjar">
+          <div class="card-front">
+            <img class="u-max-full-width" src="images/peachjar-new.svg">
+          </div>
+          <div class="card-back">
+            <p class="recommendation">
+              I have had the opportunity to work with thousands of talented people in my career. Once in awhile you cross paths with an individual who stands out above the pack. Devin is one of those people. Devin has only one measure of success: excellence. He brings passion, energy, intelligence, and a hungry entrepreneurial spirit to everything he does. <br><br>Devin is a very strategic thinker who is full of great ideas. Devin truly understands being a great product leader: manage product not people, evangelize, and the voice of the customer trumps all. <br><br>“Product” may have been the focus while working on projects with me at Peachjar, but Devin can wear any hat. He tackled analytics, brand messaging, pricing, talent acquisition, culture change, and research on the development stack that would be best for our next generation product. <br><br>Devin is CEO material and when he pursues his own startup, I would invest. I highly recommend Devin to any organization.<br><br> - Mike Durham, Founder + CEO of
+              <a href="https://www.peachjar.com" target="_blank"> Peachjar</a>
+            </p>
+          </div>
+      </div>
+        <!--Coach Don-->
+          <div class="one-half column border-effect hovereffect coachdon">
+          <img class="coachdon-img" src="images/coachdon.svg">
+      </div>
     </div>
   </div>
 </div>
