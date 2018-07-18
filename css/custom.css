@@ -110,34 +110,39 @@ a.email{
   text-decoration: none;
 }
 
-.portfolio .peachjar,
-.portfolio .bear,
-.portfolio .proper,
 .portfolio .tnlc,
+.portfolio .bear,
+.portfolio .peachjar,
 .portfolio .coachdon{
   height: 300px;
 }
 
+.portfolio .harley {
+  height: 500px;
+}
+
+.portfolio .tnlc,
+.portfolio .bear,
+.portfolio .peachjar,
+.portfolio .coachdon,
+.portfolio .harley {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+
 .portfolio .peachjar {
-  padding: 50px;
   background-color: #2C3E50;
 }
 
-.portfolio .harley {
-  height: 500px;
-  padding: 5%;
-}
-
-.angry-bear {
- padding: 5rem;
- height: inherit;
-}
-
 .harley-img,
-.coachdon-img{
-  height: 100%;
-  display: block;
-  margin: 0px auto;
+.coachdon-img,
+.angry-bear-img,
+.tnlc-img,
+.peachjar-img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .card {
