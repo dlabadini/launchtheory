@@ -1,13 +1,21 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600|Work+Sans:200,300,400,600,700);
+@import url(
+  https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,
+  600|Work+Sans:200,
+  300,
+  400,
+  600,
+  700
+);
 
 * {
-  font-family: 'Work Sans', 'Proxima Nova', 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: "Work Sans", "Proxima Nova", "Helvetica Neue", Helvetica,
+    sans-serif;
   color: #333447;
   line-height: 1.5;
 }
 
 h1 {
-  font-family: 'Source Serif Pro', Georgia, serif;
+  font-family: "Source Serif Pro", Georgia, serif;
   font-size: 4.5rem;
   font-weight: 600;
   letter-spacing: -0.02rem;
@@ -17,7 +25,7 @@ h2 {
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.75;
-  color: #FE7880;
+  color: #fe7880;
 }
 
 h3 {
@@ -59,44 +67,54 @@ p {
 
 /* Bigger than 550 */
 @media (min-width: 550px) {
-
-  .column:first-child,
-  .columns:first-child {
+  .row:first-child .column:first-child,
+  .row:first-child .columns:first-child {
     margin-bottom: 1.25rem;
     border-top-left-radius: 1rem;
-   }
-
- .column:last-child,
- .columns:last-child {
-   margin-bottom: 1.25rem;
-   border-top-right-radius: 1rem;
   }
 
- .row:last-child {
-   border-bottom-right-radius: 1rem;
-   border-bottom-left-radius: 1rem;
- }
+  .row:first-child .column:last-child,
+  .row:first-child .columns:last-child {
+    margin-bottom: 1.25rem;
+    border-top-right-radius: 1rem;
+  }
 
+  .row:last-child .column:first-child,
+  .row:last-child .columns:first-child {
+      border-bottom-left-radius: 1rem;
+  }
+
+  .row:last-child .column:last-child,
+  .row:last-child .columns:last-child
+   {
+    border-bottom-right-radius: 1rem;
+  }
 }
 
 .border-effect {
   margin-bottom: 1.25rem;
-  box-shadow: 0 2px 6px 0 rgba(0,0,0,.35);
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.35);
   text-align: center;
 }
 
-.white-color{color:#fff}
-.black-color{color:#000}
-.dark-blue-color{color: #333447}
-.angry-color{color: #251C17}
-.strong {font-weight: 500}
-
-.tnlc {
-   background: linear-gradient(to bottom right, rgb(61,184,194), rgb(61,184, 210));
+.white-color {
+  color: #fff;
+}
+.black-color {
+  color: #000;
+}
+.dark-blue-color {
+  color: #333447;
+}
+.angry-color {
+  color: #251c17;
+}
+.strong {
+  font-weight: 500;
 }
 
-a.email{
-  color:#000;
+a.email {
+  color: #000;
   text-decoration: underline;
 }
 
@@ -104,16 +122,34 @@ a.email{
   padding-top: 20px;
   text-align: center;
 }
-.socials a{
+
+.socials a {
   font-size: 22px;
   margin-right: 15px;
   text-decoration: none;
 }
 
+.app-store-icons img {
+  height: 40px;
+  padding: 1.5rem;
+}
+
+.tnlc {
+  background: linear-gradient(
+    to bottom right,
+    rgb(61, 184, 194),
+    rgb(61, 184, 210)
+  );
+}
+
+.portfolio .peachjar {
+  background-color: #2c3e50;
+}
+
 .portfolio .tnlc,
 .portfolio .bear,
 .portfolio .peachjar,
-.portfolio .coachdon{
+.portfolio .coachdon {
   height: 300px;
 }
 
@@ -132,10 +168,6 @@ a.email{
   padding: 5rem;
 }
 
-.portfolio .peachjar {
-  background-color: #2C3E50;
-}
-
 .harley-img,
 .coachdon-img,
 .angry-bear-img,
@@ -143,6 +175,10 @@ a.email{
 .peachjar-img {
   max-width: 100%;
   max-height: 100%;
+}
+
+.peachjar-img{
+  height: 80%;
 }
 
 .card {
@@ -167,41 +203,41 @@ a.email{
 .card-front,
 .card-back {
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transition: -webkit-transform 0.3s;
-          transition: transform 0.3s;
+  transition: transform 0.3s;
 }
 
 .card-front {
-  width:100%;
+  width: 100%;
 }
 
-.card-front img{
-  height:100%;
+.card-front img {
+  height: 100%;
   display: block;
   margin: 0px auto;
-  padding: 5rem;
+  padding: 8rem;
 }
 
 .card-back {
   background-color: white;
   -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
-          overflow: hidden;
+  transform: rotateY(-180deg);
+  overflow: hidden;
 }
 
-.card.card-effect:hover .card-front{
+.card.card-effect:hover .card-front {
   -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
 }
 
 .card.card-effect:hover .card-back {
   -webkit-transform: rotateY(0);
-          transform: rotateY(0);
-          overflow: auto;
+  transform: rotateY(0);
+  overflow: auto;
 }
 
-.recommendation{
+.recommendation {
   text-align: left;
   font-size: 1.5rem;
   font-weight: 300;

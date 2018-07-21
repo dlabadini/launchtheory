@@ -32,39 +32,80 @@
 
   <!-- Start of Async Drift Code -->
   <script>
-  !function() {
-    var t;
-    if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
-    t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
-    t.factory = function(e) {
-      return function() {
-        var n;
-        return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
-      };
-    }, t.methods.forEach(function(e) {
-      t[e] = t.factory(e);
-    }), t.load = function(t) {
-      var e, n, o, i;
-      e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
-      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
-      n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
-    });
-  }();
-  drift.SNIPPET_VERSION = '0.3.1';
-  drift.load('chsm7vvtgrm4');
-  </script>
+  !(function() {
+  var t;
+  if (((t = window.driftt = window.drift = window.driftt || []), !t.init))
+    return t.invoked
+      ? void (
+          window.console &&
+          console.error &&
+          console.error("Drift snippet included twice.")
+        )
+      : ((t.invoked = !0),
+        (t.methods = [
+          "identify",
+          "config",
+          "track",
+          "reset",
+          "debug",
+          "show",
+          "ping",
+          "page",
+          "hide",
+          "off",
+          "on"
+        ]),
+        (t.factory = function(e) {
+          return function() {
+            var n;
+            return (
+              (n = Array.prototype.slice.call(arguments)),
+              n.unshift(e),
+              t.push(n),
+              t
+            );
+          };
+        }),
+        t.methods.forEach(function(e) {
+          t[e] = t.factory(e);
+        }),
+        (t.load = function(t) {
+          var e, n, o, i;
+          (e = 3e5),
+            (i = Math.ceil(new Date() / e) * e),
+            (o = document.createElement("script")),
+            (o.type = "text/javascript"),
+            (o.async = !0),
+            (o.crossorigin = "anonymous"),
+            (o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js"),
+            (n = document.getElementsByTagName("script")[0]),
+            n.parentNode.insertBefore(o, n);
+        }));
+})();
+drift.SNIPPET_VERSION = "0.3.1";
+drift.load("chsm7vvtgrm4");
+</script>
   <!-- End of Async Drift Code -->
 
 </head>
 <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-73431972-1', 'auto');
-    ga('require', 'displayfeatures');
-    ga('require', 'linkid');
-    ga('send', 'pageview');
+(function(i, s, o, g, r, a, m) {
+  i["GoogleAnalyticsObject"] = r;
+  (i[r] =
+    i[r] ||
+    function() {
+      (i[r].q = i[r].q || []).push(arguments);
+    }),
+    (i[r].l = 1 * new Date());
+  (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+  a.async = 1;
+  a.src = g;
+  m.parentNode.insertBefore(a, m);
+})(window, document, "script", "//www.google-analytics.com/analytics.js", "ga");
+ga("create", "UA-73431972-1", "auto");
+ga("require", "displayfeatures");
+ga("require", "linkid");
+ga("send", "pageview");
 </script>
 
 <body>
@@ -95,26 +136,36 @@
     <div class="row">
       <div class="one-half column border-effect hovereffect tnlc">
         <div class="overlay">
-         <a class="info" href="https://getthenewlife.com/" target="_blank">New Life Challenge</a>
+         <div class="app-store-icons">
+             <a target="_blank" href="https://appsto.re/us/Dyaekb.i"><img src="images/app-store/ios-download-white.svg"></a>
+             <a target="_blank" href="https://play.google.com/store/apps/details?id=com.getthenewlife.android"><img src="images/app-store/google-play-black-trimmed.svg"></a>
+         </div>
         </div>
         <img class="u-max-full-width tnlc-img" src="images/tnlc/tnlc_white.svg">
       </div>
       <div class="one-half column border-effect hovereffect bear">
         <div class="overlay">
-          <a class="info" href="https://www.angrybear.co/" target="_blank">Angry Bear</a>
+          <a class="info app-store-icons" href="https://www.angrybear.co/" target="_blank">Angry Bear</a>
         </div>
         <img class="u-max-full-width angry-bear-img" src="images/angrybear/logo.svg">
       </div>
     </div>
       <!--Harley Davidson-->
       <div class="row">
-      <div class="u-max-full-width border-effect hovereffect harley">
-          <div class="overlay">
-            <a class="info" href="https://maps.harley-davidson.com/" target="_blank">Harley Davidson:<br/> Google Maps for Bikers</a>
-          </div>
-          <img class="harley-img" src="images/harley.jpg">
-      </div>
+        <div class="u-max-full-width border-effect hovereffect harley">
+            <div class="overlay">
+              <!--
+              <a target="_blank" class="info" href="https://maps.harley-davidson.com/">Harley Davidson:<br/> Google Maps for Bikers</a>
+              -->
+              <div class="app-store-icons">
+                  <a target="_blank" href="https://itunes.apple.com/us/app/harley-davidson/id1292723595"><img src="images/app-store/ios-download-white.svg"></a>
+                  <a target="_blank" href="https://play.google.com/store/apps/details?id=com.harley_davidson.ride_planner"><img src="images/app-store/google-play-black-trimmed.svg"></a>
+                  <a target="_blank" href="https://maps.harley-davidson.com/"><img src="images/app-store/harley-web-redirect-trimmed.svg"></a>
+              </div>
+            </div>
+            <img class="harley-img" src="images/harley/harley.jpg">
         </div>
+      </div>
     <!--Peachjar + Coach Don-->
     <div class="row">
       <div class="one-half column card card-effect border-effect peachjar">
@@ -129,9 +180,9 @@
           </div>
       </div>
         <!--Coach Don-->
-          <div class="one-half column border-effect hovereffect coachdon">
-          <img class="coachdon-img" src="images/coachdon.svg">
-      </div>
+        <div class="one-half column border-effect hovereffect coachdon">
+          <img class="u-max-full-width coachdon-img" src="images/coachdon-cropped.svg">
+        </div>
     </div>
   </div>
 </div>
