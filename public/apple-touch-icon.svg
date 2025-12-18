@@ -1,0 +1,18 @@
+<svg width="180" height="180" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="40" fill="#0A0A0A"/>
+  <!-- Rocket body -->
+  <path d="M256 100L275 200L256 300L237 200L256 100Z" fill="#06B6D4"/>
+  <path d="M240 200L272 200L280 300L232 300L240 200Z" fill="#22D3EE"/>
+  <!-- Rocket nose -->
+  <path d="M256 100L275 200L237 200L256 100Z" fill="#67E8F9"/>
+  <!-- Window -->
+  <circle cx="256" cy="240" r="20" fill="#0A0A0A" opacity="0.7"/>
+  <circle cx="256" cy="240" r="12" fill="#06B6D4" opacity="0.5"/>
+  <!-- Fins -->
+  <path d="M232 300L205 380L232 380L232 300Z" fill="#06B6D4" opacity="0.8"/>
+  <path d="M280 300L307 380L280 380L280 300Z" fill="#06B6D4" opacity="0.8"/>
+  <!-- Exhaust -->
+  <path d="M240 380L256 450L272 380L240 380Z" fill="#06B6D4" opacity="0.6"/>
+  <path d="M248 380L256 430L264 380L248 380Z" fill="#22D3EE" opacity="0.8"/>
+</svg>
+

@@ -1,0 +1,31 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Rocket body -->
+  <path d="M256 80L280 200L256 320L232 200L256 80Z" fill="#06B6D4" opacity="0.9"/>
+  
+  <!-- Rocket main body -->
+  <path d="M240 200L272 200L280 320L232 320L240 200Z" fill="#22D3EE" opacity="0.95"/>
+  
+  <!-- Rocket nose cone -->
+  <path d="M256 80L280 200L232 200L256 80Z" fill="#67E8F9"/>
+  
+  <!-- Rocket fins -->
+  <path d="M232 320L200 400L232 400L232 320Z" fill="#06B6D4" opacity="0.8"/>
+  <path d="M280 320L312 400L280 400L280 320Z" fill="#06B6D4" opacity="0.8"/>
+  
+  <!-- Rocket window -->
+  <circle cx="256" cy="240" r="20" fill="#0A0A0A" opacity="0.6"/>
+  <circle cx="256" cy="240" r="12" fill="#06B6D4" opacity="0.4"/>
+  
+  <!-- Exhaust flames -->
+  <path d="M240 400L256 480L272 400L240 400Z" fill="#06B6D4" opacity="0.6"/>
+  <path d="M248 400L256 460L264 400L248 400Z" fill="#22D3EE" opacity="0.8"/>
+  
+  <!-- Stars background -->
+  <circle cx="120" cy="120" r="2" fill="#FFFFFF" opacity="0.4"/>
+  <circle cx="380" cy="140" r="1.5" fill="#FFFFFF" opacity="0.3"/>
+  <circle cx="140" cy="360" r="1.5" fill="#FFFFFF" opacity="0.3"/>
+  <circle cx="360" cy="380" r="2" fill="#FFFFFF" opacity="0.4"/>
+  <circle cx="100" cy="280" r="1" fill="#FFFFFF" opacity="0.2"/>
+  <circle cx="400" cy="260" r="1" fill="#FFFFFF" opacity="0.2"/>
+</svg>
+

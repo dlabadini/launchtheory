@@ -52,9 +52,9 @@ export function Hero() {
               mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}
           >
-            The post-AI world requires a different approach.
+            Building AI products, agentic workflows, and intelligent automation.
             <br className="hidden md:block" />
-            <span className="text-neutral-500">We navigate the transition.</span>
+            <span className="text-neutral-500">We create the future of work.</span>
           </p>
           
           {/* Subtle indicators with staggered animation */}
@@ -65,24 +65,24 @@ export function Hero() {
           >
             <span className="group flex items-center gap-2 hover:text-neutral-400 transition-colors duration-300">
               <span className="w-1.5 h-1.5 rounded-full bg-neutral-700 group-hover:bg-neutral-500 transition-colors" />
-              Select engagements
+              AI Products
             </span>
             <span className="w-1 h-1 rounded-full bg-neutral-800" />
             <span className="group flex items-center gap-2 hover:text-neutral-400 transition-colors duration-300">
               <span className="w-1.5 h-1.5 rounded-full bg-neutral-700 group-hover:bg-neutral-500 transition-colors" />
-              Strategic focus
+              Agentic Workflows
             </span>
             <span className="w-1 h-1 rounded-full bg-neutral-800" />
             <span className="group flex items-center gap-2 hover:text-neutral-400 transition-colors duration-300">
               <span className="w-1.5 h-1.5 rounded-full bg-neutral-700 group-hover:bg-neutral-500 transition-colors" />
-              Discrete operations
+              Vibe Coding
             </span>
           </div>
         </div>
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float" aria-hidden="true">
         <div className="w-6 h-10 rounded-full border border-neutral-800 flex items-start justify-center p-2">
           <div className="w-1 h-3 rounded-full bg-neutral-700 animate-pulse" />
         </div>

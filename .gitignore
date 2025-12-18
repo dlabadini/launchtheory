@@ -39,3 +39,9 @@ next-env.d.ts
 # bun
 bun.lockb
 
+# Turbopack cache
+.turbo
+
+# IDE
+.vscode
+.idea
